@@ -225,12 +225,23 @@ header {
     flex-direction: column;
     align-items: flex-start;
 }
+.example-area{
+    margin-block: 30px;
+    justify-content: space-between;
+}
 
 .examples-cards{
     width: 23%;
     position: relative;
     min-height: 300px;
     background-color: #060707;
+    background-image: url(images/asset\ 35.jpeg);
+    background: linear-gradient((rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)));
+    transition: 0.2s ease-out;
+}
+
+.examples-cards:hover{
+box-shadow: 0 0 10px #888;
 }
 
 .card-text{
@@ -239,4 +250,53 @@ header {
     right: 20px;
     left: 20px;
     color: white;
+}
+
+/* Cta section */
+
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    
+}
+
+.cta-section{
+   background-color: #183656;
+   padding: 120px var(--padding-inline-section) 80px;
+}
+
+.cta-section-container p{
+    color: white;
+    margin-top: 20px;
+}
+
+/* footer */
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* subfooter */
+
+.subfooter {
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+
+.sub-footer-container {
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
